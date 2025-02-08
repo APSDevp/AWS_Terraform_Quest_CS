@@ -1,9 +1,9 @@
 variable "ami_id" {
-  default = "ami-0f2eac25772cd4e36"
+  default = "ami-09a9858973b288bdd"
 }
 
 variable "instance_type" {
-  default = "t2.micro"
+  default = "t3.micro"
 }
 variable "vpc_id" {
   type = string
@@ -13,4 +13,8 @@ variable "security_group_id" {
 }
 variable "public_subnet_id" {
   type = string
+}
+
+variable "keypair" {
+default = "fet-jenkins"
 }
